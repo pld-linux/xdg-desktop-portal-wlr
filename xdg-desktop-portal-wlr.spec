@@ -21,6 +21,8 @@ BuildRequires:	wayland-devel
 BuildRequires:	wayland-protocols >= 1.24
 Requires:	pipewire-libs >= 0.3.62
 Requires:	xdg-desktop-portal
+Suggests:	grim
+Suggests:	slurp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
