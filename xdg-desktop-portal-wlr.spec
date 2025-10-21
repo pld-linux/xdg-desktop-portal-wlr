@@ -14,7 +14,7 @@ BuildRequires:	meson >= 0.58.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pipewire-devel >= 0.3.62
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	scdoc >= 1.9.7
 BuildRequires:	systemd-devel
 BuildRequires:	wayland-devel
