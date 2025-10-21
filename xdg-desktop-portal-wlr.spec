@@ -1,16 +1,16 @@
 Summary:	xdg-desktop-portal backend for wlroots
 Name:		xdg-desktop-portal-wlr
-Version:	0.7.1
+Version:	0.8.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://github.com/emersion/xdg-desktop-portal-wlr/releases/download/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	db51a36f9e5bdbbb8623378b3a5588eb
+# Source0-md5:	8989b35c9b979ff245e8d191a425ea15
 URL:		https://github.com/emersion/xdg-desktop-portal-wlr
 BuildRequires:	Mesa-libgbm-devel
 BuildRequires:	inih-devel
 BuildRequires:	libdrm-devel
-BuildRequires:	meson >= 0.58.0
+BuildRequires:	meson >= 0.60.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pipewire-devel >= 0.3.62
 BuildRequires:	pkgconfig
@@ -24,6 +24,8 @@ Requires:	xdg-desktop-portal
 Suggests:	grim
 Suggests:	slurp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		filterout_cpp	-DNDEBUG
 
 %description
 xdg-desktop-portal backend for wlroots.
