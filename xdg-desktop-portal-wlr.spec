@@ -1,11 +1,11 @@
 Summary:	xdg-desktop-portal backend for wlroots
 Name:		xdg-desktop-portal-wlr
-Version:	0.8.1
+Version:	0.8.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://github.com/emersion/xdg-desktop-portal-wlr/releases/download/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	211bfd91173343ed50a4150c2196d198
+# Source0-md5:	54a2380ad4316215da520f1cbd314fed
 URL:		https://github.com/emersion/xdg-desktop-portal-wlr
 BuildRequires:	Mesa-libgbm-devel
 BuildRequires:	inih-devel
