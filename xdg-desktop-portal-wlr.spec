@@ -1,7 +1,7 @@
 Summary:	xdg-desktop-portal backend for wlroots
 Name:		xdg-desktop-portal-wlr
 Version:	0.8.4
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	https://github.com/emersion/xdg-desktop-portal-wlr/releases/download/v%{version}/%{name}-%{version}.tar.gz
@@ -41,6 +41,8 @@ xdg-desktop-portal backend for wlroots.
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT/etc/xdg/xdg-desktop-portal-wlr
+
 %meson_install
 
 %clean
@@ -55,6 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CONTRIBUTING.md LICENSE README.md
+%dir /etc/xdg/xdg-desktop-portal-wlr
 %attr(755,root,root) %{_libexecdir}/xdg-desktop-portal-wlr
 %{systemduserunitdir}/xdg-desktop-portal-wlr.service
 %{_datadir}/dbus-1/services/org.freedesktop.impl.portal.desktop.wlr.service
